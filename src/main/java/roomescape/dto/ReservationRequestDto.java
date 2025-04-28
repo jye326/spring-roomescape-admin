@@ -9,7 +9,7 @@ import roomescape.model.UserName;
 
 public record ReservationRequestDto(@JsonProperty(value = "name", defaultValue = "name") String name,
                                     @JsonProperty("date") String date,
-                                    @JsonProperty("timeId") Long timeId) {
+                                    @JsonProperty("time_id") Long time_id) {
 
     public Reservation toEntity(Long id, ReservationTime reservationTime) {
         return new Reservation(id,

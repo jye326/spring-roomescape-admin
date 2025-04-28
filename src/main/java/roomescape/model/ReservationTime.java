@@ -4,20 +4,20 @@ import static roomescape.util.FormatValidator.validateTimeFormat;
 
 public class ReservationTime {
     private final Long id;
-    private final String startAt;
+    private final String start_at;
 
-    public ReservationTime(Long id, String startAt) {
-        validateTimeFormat(startAt);
+    public ReservationTime(Long id, String start_at) {
+        validateTimeFormat(start_at);
         this.id = id;
-        this.startAt = startAt;
+        this.start_at = start_at;
     }
 
     public Long getId() {
         return id;
     }
 
-    public String getStartAt() {
-        return startAt;
+    public String getStart_at() {
+        return start_at;
     }
 
 }

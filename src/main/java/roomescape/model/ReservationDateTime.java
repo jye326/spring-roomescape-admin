@@ -25,7 +25,7 @@ public class ReservationDateTime {
 
     private void validateDateTime(ReservationDate reservationDate, ReservationTime reservationTime) {
         LocalDate date = LocalDate.parse(reservationDate.getDate());
-        LocalTime time = LocalTime.parse(reservationTime.getStartAt());
+        LocalTime time = LocalTime.parse(reservationTime.getStart_at());
         LocalDateTime dateTime = LocalDateTime.of(date, time);
         LocalDateTime now = LocalDateTime.now();
         if (dateTime.isBefore(now)) {
